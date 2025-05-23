@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Lamine Niang</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e9ecef;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1a3c34;
+      color: white;
+      text-align: center;
+      padding: 3em 1em;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    nav {
+      background-color: #264653;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5em;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #2a9d8f;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    .section {
+      margin-bottom: 3em;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+      color: #1a3c34;
+    }
+    .skills-grid, .projects-grid, .diplomas-grid, .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+    }
+    .skill, .project, .diploma, .certification {
+      background-color: white;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .skill:hover, .project:hover, .diploma:hover, .certification:hover {
+      transform: translateY(-5px);
+    }
+    .skill h3, .project h3, .diploma h3, .certification h3 {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    .project a {
+      color: #2a9d8f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      max-width: 500px;
+    }
+    .contact input, .contact textarea {
+      padding: 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .contact button {
+      background-color: #2a9d8f;
+      color: white;
+      border: none;
+      padding: 0.8em;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .contact button:hover {
+      background-color: #1a3c34;
+    }
+    .contact ul {
+      list-style: none;
+      margin-bottom: 1em;
+    }
+    .contact ul li {
+      margin-bottom: 0.5em;
+    }
+    footer {
+      background-color: #1a3c34;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav a {
+        margin: 0 0.5em;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lamine Niang</h1>
+    <p>Administrateur Système & Réseaux</p>
+  </header>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#a-propos">À propos</a>
+    <a href="#diplomes">Diplômes et Formations</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <div id="accueil" class="section">
+      <h2>Accueil</h2>
+      <p>Bienvenue sur mon portfolio ! Je suis Lamine Niang, étudiant en Licence 3 en réseaux informatiques à l’ISI et passionné par l’informatique. Rigoureux, curieux et doté de solides compétences en administration système et réseaux, je m’engage à relever des défis techniques avec sérieux. Découvrez mes projets, diplômes et certifications ci-dessous.</p>
+    </div>
+    <div id="competences" class="section">
+      <h2>Mes Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Systèmes d'Exploitation</h3>
+          <p>Administration de Windows (10/11) et Linux (Ubuntu, CentOS, Debian).</p>
+        </div>
+        <div class="skill">
+          <h3>Administration Windows Server</h3>
+          <p>Installation et configuration de Windows Server (2012, 2016, 2019, 2022, 2025).</p>
+        </div>
+        <div class="skill">
+          <h3>Sécurité Active Directory</h3>
+          <p>Gestion des utilisateurs, GPO, sauvegardes, restaurations et configuration des politiques de sécurité.</p>
+        </div>
+        <div class="skill">
+          <h3>Virtualisation</h3>
+          <p>Maîtrise de VMware vSphere, Microsoft Hyper-V, Oracle VM VirtualBox, Proxmox VE, VMware ESXi.</p>
+        </div>
+        <div class="skill">
+          <h3>Réseaux Informatiques</h3>
+          <p>Configuration de routeurs, switches, services DNS, DHCP, IIS, FTP, VLAN, NAT, OSPF et gestion des protocoles IP.</p>
+        </div>
+        <div class="skill">
+          <h3>Maintenance Informatique</h3>
+          <p>Diagnostic et résolution de pannes matérielles/logicielles, mises à jour système et gestion des sauvegardes.</p>
+        </div>
+        <div class="skill">
+          <h3>Outils de Gestion</h3>
+          <p>Scripting avec PowerShell et configuration de services Linux (Apache, Nginx).</p>
+        </div>
+        <div class="skill">
+          <h3>Administration de Bases de Données</h3>
+          <p>Installation, configuration, sauvegarde et restauration de bases de données Oracle.</p>
+        </div>
+        <div class="skill">
+          <h3>Cloud</h3>
+          <p>Connaissance des concepts de base d’AWS et déploiement d’infrastructures virtualisées.</p>
+        </div>
+      </div>
+    </div>
+    <div id="projets" class="section">
+      <h2>Mes Projets</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Configuration WLAN sur Packet Tracer</h3>
+          <p>Configuration de points d’accès pour une couverture optimale, sécurisation du réseau avec des protocoles WPA2/WPA3, gestion des VLAN pour segmenter le trafic et tests de connectivité pour garantir un fonctionnement sans faille. Ce projet a renforcé mes compétences en réseaux et l’application de concepts théoriques dans un environnement simulé.</p>
+          <a href="#">Détails du projet</a>
+        </div>
+        <div class="project">
+          <h3>Implémentation d’une solution WDS</h3>
+          <p>Mise en place d’une solution de déploiement à distance avec Windows Deployment Services (WDS) pour automatiser l’installation de systèmes d’exploitation sur des postes clients, optimisant la gestion des déploiements à grande échelle.</p>
+          <a href="#">Détails du projet</a>
+        </div>
+        <div class="project">
+          <h3>Migration Windows Server 2019 vers 2022</h3>
+          <p>Migration d’un serveur Windows Server 2019 avec Active Directory vers Windows Server 2022. Étapes : configuration du serveur 2022 comme contrôleur de domaine secondaire, migration des rôles FSMO, transfert des utilisateurs, groupes, GPO et paramètres DNS, suivi de tests pour assurer la continuité de service.</p>
+          <a href="#">Détails du projet</a>
+        </div>
+        <div class="project">
+          <h3>Mise en place d’un cluster de bascule avec Hyper-V</h3>
+          <p>Configuration d’un cluster de bascule sur Windows Server avec Hyper-V, incluant l’installation de la fonctionnalité de cluster à basculement, la création du cluster et la configuration de la haute disponibilité pour les machines virtuelles, garantissant une infrastructure résiliente.</p>
+          <a href="#">Détails du projet</a>
+        </div>
+        <div class="project">
+          <h3>Mise en place d’une infrastructure ToIP avec Asterisk et Cisco CME</h3>
+          <p>Configuration d’une solution de téléphonie sur IP avec Asterisk (IPBX open-source) et Cisco CallManager Express (CME). Installation d’Asterisk sur Linux avec support des codecs Opus/MP3 et langue française. Configuration de comptes SIP et plan de numérotation. Gestion des téléphones IP via CME avec protocoles SCCP/SIP et services TFTP.</p>
+          <a href="toip-project.html">Détails du projet</a>
+        </div>
+        <div class="project">
+          <h3>Configuration d’un serveur FTP sur Windows Server</h3>
+          <p>Installation et configuration d’un serveur FTP sur Windows Server avec IIS. Création d’un site FTP (`LAMINE-ftp`) avec authentification de base, autorisations de lecture/écriture, et accès via l’adresse IP `192.168.20.66`. Test réussi en interne, permettant le partage et l’upload de fichiers.</p>
+          <a href="ftp-project.html">Détails du projet</a>
+        </div>
+      </div>
+    </div>
+    <div id="a-propos" class="section">
+      <h2>À propos</h2>
+      <p>Passionné par l’informatique, je suis Lamine Niang, étudiant en Licence 3 en réseaux informatiques à l’Institut Supérieur d’Informatique (ISI) et titulaire d’un DISEP en Administration Système, Sécurité et Cloud de l’ISEP Diamniadio. Rigoureux et organisé, je possède de solides compétences en administration système, réseaux, et rédaction technique. Curieux et ouvert d’esprit, j’aime relever des défis complexes, comme en témoignent mes projets en ToIP et FTP. Doté d’un excellent sens relationnel et d’un esprit compétitif, je m’engage pleinement dans chaque mission avec sérieux et ponctualité, contribuant efficacement à la réussite des équipes.</p>
+    </div>
+    <div id="diplomes" class="section">
+      <h2>Diplômes et Formations</h2>
+      <div class="diplomas-grid">
+        <div class="diploma">
+          <h3>Licence 3 en Réseau Informatique</h3>
+          <p>Depuis novembre 2024, ISI Dieupeul</p>
+        </div>
+        <div class="diploma">
+          <h3>Diplôme Supérieur d’Enseignement Professionnel (DISEP)</h3>
+          <p>Janvier 2023 - Décembre 2024, ISEP Diamniadio</p>
+        </div>
+        <div class="diploma">
+          <h3>Baccalauréat</h3>
+          <p>2022, Lycée Maba Diakhou Ba, Nioro du Rip</p>
+        </div>
+      </div>
+    </div>
+    <div id="certifications" class="section">
+      <h2>Certifications</h2>
+      <div class="certifications-grid">
+        <div class="certification">
+          <h3>CCNA: Enterprise Networking, Security, and Automation</h3>
+          <p>Cisco, 2024</p>
+        </div>
+        <div class="certification">
+          <h3>Attestation Ethical Hacker</h3>
+          <p>Cisco NetAcad, 2024</p>
+        </div>
+        <div class="certification">
+          <h3>Attestation IT Essentials</h3>
+          <p>Cisco NetAcad, 2024</p>
+        </div>
+        <div class="certification">
+          <h3>Attestation Introduction à la Cybersécurité</h3>
+          <p>Cisco NetAcad, 2024</p>
+        </div>
+        <div class="certification">
+          <h3>Attestation NDG Linux Essentiel</h3>
+          <p>Cisco, 2024</p>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Contactez-moi pour discuter de vos projets ou opportunités :</p>
+      <ul>
+        <li><strong>E-mail</strong>: niangbarhamien2020@gmail.com</li>
+        <li><strong>Téléphone</strong>: +221 78 567 5834</li>
+        <li><strong>Adresse</strong>: Nord Foire, Dakar, Sénégal</li>
+      </ul>
+      <form action="mailto:niangbarhamien2020@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <p>Ou via mes réseaux : <a href="https://www.linkedin.com/in/lamine-niang-3231981b9">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </div>
+  </div>
+  <footer>
+    <p>© 2025 Lamine Niang. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
